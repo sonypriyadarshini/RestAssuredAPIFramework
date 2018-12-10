@@ -1,6 +1,7 @@
 package testApi;
 
-import helper.ApiCalls;
+import commons.call.ApiCalls;
+import commons.endpoints.Endpoints;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -14,7 +15,7 @@ import org.testng.annotations.Test;
 * Response is checked here using JSONPath
 */
 
-public class PostCall {
+public class PostCallTest {
 
     @Test
     public void postCallTest(){
@@ -25,7 +26,7 @@ public class PostCall {
         jsonObject.put("name", RandomStringUtils.randomAlphabetic(5));
         jsonObject.put("job", RandomStringUtils.randomAlphanumeric(10).toUpperCase());
 
-        Response response = apiCalls.postMethod("/api/users",jsonObject);
+        Response response = apiCalls.postMethod(Endpoints.commonEndpoint,jsonObject);
         JsonPath jsonPath = new JsonPath(response.asString());
         System.out.println("name from request "+jsonObject.get("name").toString());
         System.out.println("name from response "+jsonPath.get("name").toString());

@@ -1,6 +1,7 @@
 package testApi;
 
-import helper.ApiCalls;
+import commons.call.ApiCalls;
+import commons.endpoints.Endpoints;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
@@ -11,18 +12,19 @@ import org.testng.annotations.Test;
 * Respose is checked here using JSONPath
 * */
 
-public class GetCall {
+public class GetCallTest {
     @Test
     public void getTest(){
 
         //call the get call method from ApiCalls
         ApiCalls apiCalls = new ApiCalls();
-        Response response = apiCalls.getMethod("/api/users");
+        int userid = 2;
+        Response response = apiCalls.getMethod(Endpoints.commonEndpoint+userid);
 
         //convert the response received from get call into a jsonpath object
         JsonPath jsonPath = new JsonPath(response.asString());
 
         //parse though the response using jsonpath
-        System.out.println("Data "+jsonPath.get("data[0].first_name"));
+        System.out.println("Data "+jsonPath.get("data[0].name"));
     }
 }
