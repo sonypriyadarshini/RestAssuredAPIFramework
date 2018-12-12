@@ -2,6 +2,7 @@ package commons.call;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 import org.apache.log4j.Logger;
 import org.json.simple.JSONObject;
 
@@ -11,25 +12,21 @@ import static io.restassured.RestAssured.given;
 */
 
 public class ApiCalls {
-    Logger log = Logger.getLogger(ApiCalls.class);
+    static Logger log = Logger.getLogger(ApiCalls.class);
 
+    public static Response getMethod(String endpoint){
 
-    public Response getMethod(String endpoint){
-
-        RestAssured.baseURI="https://reqres.in/";
-        log.info("URL is "+RestAssured.baseURI+endpoint);
-        return  given().contentType("application/json")
-                .when().get(endpoint)
-                .then().statusCode(200)
-                .and().log().all()
-                .extract().response();
+        //using Requestspecification class
+        RequestSpecification requestSpecification = RestAssured.given();
+        log.info("===================URL is "+endpoint);
+        requestSpecification.contentType("application/json");
+        return requestSpecification.get(endpoint).then().log().all().and().extract().response();
     }
 
-    public Response postMethod(String endpoint, JSONObject json){
+    public static Response postMethod(String endpoint, JSONObject json){
 
-        RestAssured.baseURI="https://reqres.in/";
-        log.info("URL is "+RestAssured.baseURI+endpoint);
-        log.info("Request is "+json.toString());
+        log.info("====================URL is "+endpoint);
+        log.info("====================Request is "+json.toString());
         return  given()
                     .header("Content-Type","application/json")
                     .body(json.toJSONString())
@@ -39,11 +36,10 @@ public class ApiCalls {
                 .extract().response();
     }
 
-    public Response putMethod(String endpoint, JSONObject json){
+    public static Response putMethod(String endpoint, JSONObject json){
 
-        RestAssured.baseURI="https://reqres.in/";
-        log.info("URL is "+RestAssured.baseURI+endpoint);
-        log.info("Request is "+json.toString());
+        log.info("====================URL is "+RestAssured.baseURI+endpoint);
+        log.info("====================Request is "+json.toString());
         return  given()
                 .header("Content-Type","application/json")
                 .body(json.toJSONString())

@@ -2,9 +2,11 @@ package testApi;
 
 import commons.call.ApiCalls;
 import commons.endpoints.Endpoints;
+import commons.endpoints.URL;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.log4j.Logger;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -16,20 +18,20 @@ import org.testng.annotations.Test;
 */
 
 public class PostCallTest {
+    static Logger log = Logger.getLogger(PostCallTest.class);
 
     @Test
     public void postCallTest(){
-
-        ApiCalls apiCalls = new ApiCalls();
 
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("name", RandomStringUtils.randomAlphabetic(5));
         jsonObject.put("job", RandomStringUtils.randomAlphanumeric(10).toUpperCase());
 
-        Response response = apiCalls.postMethod(Endpoints.commonEndpoint,jsonObject);
+        Response response = ApiCalls.postMethod(URL.baseUrl +Endpoints.COMMON.getPath(),jsonObject);
         JsonPath jsonPath = new JsonPath(response.asString());
-        System.out.println("name from request "+jsonObject.get("name").toString());
-        System.out.println("name from response "+jsonPath.get("name").toString());
+        log.info("name from request "+jsonObject.get("name").toString());
+        log.info("name from response "+jsonPath.get("name").toString());
+
         Assert.assertTrue(jsonObject.get("name").equals(jsonPath.get("name")));
     }
 }

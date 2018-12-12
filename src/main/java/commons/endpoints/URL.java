@@ -1,5 +1,7 @@
 package commons.endpoints;
 
-public class URLs {
-    private static final String fixedUrl = "https://reqres.in";
+//class to define the baseurl
+
+public class URL {
+    public static final String baseUrl = "https://reqres.in";
 }
