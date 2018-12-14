@@ -9,15 +9,15 @@ import org.apache.log4j.Logger;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import request.PutRequest;
+import request.PutorPostRequest;
 
 public class PutCallTest {
-    static Logger log = Logger.getLogger(PutRequest.class);
+    static Logger log = Logger.getLogger(PutorPostRequest.class);
 
     @Test
     public void putTest(){
 
-        PutRequest request = new PutRequest();
+        PutorPostRequest request = new PutorPostRequest();
         JSONObject requestobj = request.formPutRequest();
         int userid = 2;
 

@@ -3,7 +3,7 @@ package request;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.json.simple.JSONObject;
 
-public class PutRequest {
+public class PutorPostRequest {
 
     public JSONObject formPutRequest(){
 
