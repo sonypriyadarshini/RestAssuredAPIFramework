@@ -3,7 +3,7 @@ package commons.endpoints;
 //enum to define all the ednpoints that will follow baseurl
 public enum  Endpoints {
 
-    COMMON("/api/users");
+    COMMON("/api/users/");
 
     String path;
 

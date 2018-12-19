@@ -29,7 +29,7 @@ public class GetCallTest {
         JsonPath jsonPath = new JsonPath(response.asString());
 
         //parse though the response using jsonpath
-        log.info("Data "+jsonPath.get("data[0].name"));
+        log.info("Data "+jsonPath.get("data.first_name"));
         Assert.assertTrue(response.getStatusCode()==200);
     }
 }
