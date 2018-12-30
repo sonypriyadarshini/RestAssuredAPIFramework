@@ -17,3 +17,5 @@
 1. `io.restassured.path.json.JsonPath` JsonPath is used to convert the Response to a java object
 2.  JsonPath is used to parse through the response
 
+**File Comparator** 
+1. 

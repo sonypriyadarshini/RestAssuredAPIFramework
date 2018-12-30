@@ -1,258 +1,70 @@
-2018-12-19 09:06:07,653  INFO [main] FileComparatorTest:54 - read line 1 ======== https://reqres.in/api/users/1
-2018-12-19 09:06:07,658  INFO [main] FileComparatorTest:56 - read line 2 ======== https://reqres.in/api/users/1
-2018-12-19 09:06:08,253  INFO [main] ApiCalls:21 - ===================URL is https://reqres.in/api/users/1
-2018-12-19 09:06:09,250 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://reqres.in:443
-2018-12-19 09:06:09,348 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to reqres.in:443
-2018-12-19 09:06:09,710 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2018-12-19 09:06:09,711 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
-2018-12-19 09:06:09,711 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2018-12-19 09:06:09,712 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2018-12-19 09:06:09,712 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
-2018-12-19 09:06:09,712 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /api/users/1 HTTP/1.1
-2018-12-19 09:06:09,713 DEBUG [main] wire:73 -  >> "GET /api/users/1 HTTP/1.1[\r][\n]"
-2018-12-19 09:06:09,713 DEBUG [main] wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-2018-12-19 09:06:09,714 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
-2018-12-19 09:06:09,714 DEBUG [main] wire:73 -  >> "Host: reqres.in[\r][\n]"
-2018-12-19 09:06:09,714 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2018-12-19 09:06:09,715 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_152)[\r][\n]"
-2018-12-19 09:06:09,715 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2018-12-19 09:06:09,716 DEBUG [main] wire:73 -  >> "[\r][\n]"
-2018-12-19 09:06:09,716 DEBUG [main] headers:278 - >> GET /api/users/1 HTTP/1.1
-2018-12-19 09:06:09,716 DEBUG [main] headers:281 - >> Content-Type: application/json; charset=UTF-8
-2018-12-19 09:06:09,716 DEBUG [main] headers:281 - >> Accept: */*
-2018-12-19 09:06:09,717 DEBUG [main] headers:281 - >> Host: reqres.in
-2018-12-19 09:06:09,717 DEBUG [main] headers:281 - >> Connection: Keep-Alive
-2018-12-19 09:06:09,717 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_152)
-2018-12-19 09:06:09,717 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
-2018-12-19 09:06:10,242 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2018-12-19 09:06:10,244 DEBUG [main] wire:73 -  << "Date: Wed, 19 Dec 2018 03:36:11 GMT[\r][\n]"
-2018-12-19 09:06:10,245 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-2018-12-19 09:06:10,245 DEBUG [main] wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
-2018-12-19 09:06:10,245 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
-2018-12-19 09:06:10,246 DEBUG [main] wire:73 -  << "Set-Cookie: __cfduid=d030b8915bdab886a0b591fadd5adcbfd1545190570; expires=Thu, 19-Dec-19 03:36:10 GMT; path=/; domain=.reqres.in; HttpOnly[\r][\n]"
-2018-12-19 09:06:10,246 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
-2018-12-19 09:06:10,246 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
-2018-12-19 09:06:10,247 DEBUG [main] wire:73 -  << "ETag: W/"88-a96vdDOo4SfKEOyPCHOELDYW3Sg"[\r][\n]"
-2018-12-19 09:06:10,247 DEBUG [main] wire:73 -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
-2018-12-19 09:06:10,247 DEBUG [main] wire:73 -  << "Server: cloudflare[\r][\n]"
-2018-12-19 09:06:10,248 DEBUG [main] wire:73 -  << "CF-RAY: 48b6d2cc3ed6c351-SIN[\r][\n]"
-2018-12-19 09:06:10,248 DEBUG [main] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
-2018-12-19 09:06:10,249 DEBUG [main] wire:73 -  << "[\r][\n]"
-2018-12-19 09:06:10,250 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2018-12-19 09:06:10,251 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
-2018-12-19 09:06:10,251 DEBUG [main] headers:265 - << Date: Wed, 19 Dec 2018 03:36:11 GMT
-2018-12-19 09:06:10,251 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
-2018-12-19 09:06:10,252 DEBUG [main] headers:265 - << Transfer-Encoding: chunked
-2018-12-19 09:06:10,252 DEBUG [main] headers:265 - << Connection: keep-alive
-2018-12-19 09:06:10,253 DEBUG [main] headers:265 - << Set-Cookie: __cfduid=d030b8915bdab886a0b591fadd5adcbfd1545190570; expires=Thu, 19-Dec-19 03:36:10 GMT; path=/; domain=.reqres.in; HttpOnly
-2018-12-19 09:06:10,253 DEBUG [main] headers:265 - << X-Powered-By: Express
-2018-12-19 09:06:10,253 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
-2018-12-19 09:06:10,254 DEBUG [main] headers:265 - << ETag: W/"88-a96vdDOo4SfKEOyPCHOELDYW3Sg"
-2018-12-19 09:06:10,254 DEBUG [main] headers:265 - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-2018-12-19 09:06:10,254 DEBUG [main] headers:265 - << Server: cloudflare
-2018-12-19 09:06:10,254 DEBUG [main] headers:265 - << CF-RAY: 48b6d2cc3ed6c351-SIN
-2018-12-19 09:06:10,255 DEBUG [main] headers:265 - << Content-Encoding: gzip
-2018-12-19 09:06:10,262 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
-2018-12-19 09:06:10,275 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
-2018-12-19 09:06:10,276 DEBUG [main] wire:73 -  << "89[\r][\n]"
-2018-12-19 09:06:10,277 DEBUG [main] wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]D[0xc8];[0xe][0xc2]0[0x10][0x5][0xc0][0xbb][0xbc][0xda][0xf2]*[0xd0] [0x97]4[0x1c][0x3]-[0xf1][0xc6]1[0xf2]'[0xb2]7[0x89]D[0x94][0xbb]SP[0xd0]L1[0x7]<+[0xc3][0x1d][0x88][0x1e]n0[0x98]b[0xeb][0xfa],[0x9c][0x5][0xe][0xf][0xa9]-[0x8][0xc][0x12][0xff][0xf3][0x9e]V[0x9d]a[0xc0][0x1b]+78[0xcc][0xaa]KwD[0xfd]j9[0xf3][0xa7][0x16][0xde][0xbb][0x1d]k[0xa6]5N<J[0xa7][0x9f][0xba]GUi4r[0x92]W[\r]^[\n]"
-2018-12-19 09:06:10,277 DEBUG [main] wire:87 -  << "[\r][0x97][0x9b]}/[0x1][0xe7][0xf9][0x5][0x0][0x0][0xff][0xff][0x3][0x0][0x9a]k[0xc9][0xc4][0x88][0x0][0x0][0x0]"
-2018-12-19 09:06:10,277 DEBUG [main] wire:73 -  << "[\r][\n]"
-2018-12-19 09:06:10,278 DEBUG [main] wire:73 -  << "0[\r][\n]"
-2018-12-19 09:06:10,278 DEBUG [main] wire:73 -  << "[\r][\n]"
-2018-12-19 09:06:10,279 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2018-12-19 09:06:10,391 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@58ebfd03
-2018-12-19 09:06:10,392 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2018-12-19 09:06:10,810  INFO [main] FileComparatorTest:59 - Data George
-2018-12-19 09:06:10,811  INFO [main] ApiCalls:21 - ===================URL is https://reqres.in/api/users/1
-2018-12-19 09:06:10,822 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://reqres.in:443
-2018-12-19 09:06:10,823 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to reqres.in:443
-2018-12-19 09:06:11,073 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2018-12-19 09:06:11,075 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
-2018-12-19 09:06:11,076 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2018-12-19 09:06:11,077 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2018-12-19 09:06:11,078 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
-2018-12-19 09:06:11,078 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /api/users/1 HTTP/1.1
-2018-12-19 09:06:11,079 DEBUG [main] wire:73 -  >> "GET /api/users/1 HTTP/1.1[\r][\n]"
-2018-12-19 09:06:11,079 DEBUG [main] wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-2018-12-19 09:06:11,079 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
-2018-12-19 09:06:11,080 DEBUG [main] wire:73 -  >> "Host: reqres.in[\r][\n]"
-2018-12-19 09:06:11,080 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2018-12-19 09:06:11,081 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_152)[\r][\n]"
-2018-12-19 09:06:11,082 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2018-12-19 09:06:11,083 DEBUG [main] wire:73 -  >> "[\r][\n]"
-2018-12-19 09:06:11,085 DEBUG [main] headers:278 - >> GET /api/users/1 HTTP/1.1
-2018-12-19 09:06:11,086 DEBUG [main] headers:281 - >> Content-Type: application/json; charset=UTF-8
-2018-12-19 09:06:11,086 DEBUG [main] headers:281 - >> Accept: */*
-2018-12-19 09:06:11,086 DEBUG [main] headers:281 - >> Host: reqres.in
-2018-12-19 09:06:11,087 DEBUG [main] headers:281 - >> Connection: Keep-Alive
-2018-12-19 09:06:11,087 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_152)
-2018-12-19 09:06:11,087 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
-2018-12-19 09:06:11,517 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2018-12-19 09:06:11,518 DEBUG [main] wire:73 -  << "Date: Wed, 19 Dec 2018 03:36:12 GMT[\r][\n]"
-2018-12-19 09:06:11,519 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-2018-12-19 09:06:11,519 DEBUG [main] wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
-2018-12-19 09:06:11,519 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
-2018-12-19 09:06:11,520 DEBUG [main] wire:73 -  << "Set-Cookie: __cfduid=d87fcd928c8d1c782aaf6cf02546600f11545190572; expires=Thu, 19-Dec-19 03:36:12 GMT; path=/; domain=.reqres.in; HttpOnly[\r][\n]"
-2018-12-19 09:06:11,520 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
-2018-12-19 09:06:11,520 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
-2018-12-19 09:06:11,520 DEBUG [main] wire:73 -  << "ETag: W/"88-a96vdDOo4SfKEOyPCHOELDYW3Sg"[\r][\n]"
-2018-12-19 09:06:11,521 DEBUG [main] wire:73 -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
-2018-12-19 09:06:11,521 DEBUG [main] wire:73 -  << "Server: cloudflare[\r][\n]"
-2018-12-19 09:06:11,521 DEBUG [main] wire:73 -  << "CF-RAY: 48b6d2d4cd29aa1a-SIN[\r][\n]"
-2018-12-19 09:06:11,522 DEBUG [main] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
-2018-12-19 09:06:11,522 DEBUG [main] wire:73 -  << "[\r][\n]"
-2018-12-19 09:06:11,522 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2018-12-19 09:06:11,523 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
-2018-12-19 09:06:11,523 DEBUG [main] headers:265 - << Date: Wed, 19 Dec 2018 03:36:12 GMT
-2018-12-19 09:06:11,523 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
-2018-12-19 09:06:11,523 DEBUG [main] headers:265 - << Transfer-Encoding: chunked
-2018-12-19 09:06:11,524 DEBUG [main] headers:265 - << Connection: keep-alive
-2018-12-19 09:06:11,524 DEBUG [main] headers:265 - << Set-Cookie: __cfduid=d87fcd928c8d1c782aaf6cf02546600f11545190572; expires=Thu, 19-Dec-19 03:36:12 GMT; path=/; domain=.reqres.in; HttpOnly
-2018-12-19 09:06:11,524 DEBUG [main] headers:265 - << X-Powered-By: Express
-2018-12-19 09:06:11,524 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
-2018-12-19 09:06:11,524 DEBUG [main] headers:265 - << ETag: W/"88-a96vdDOo4SfKEOyPCHOELDYW3Sg"
-2018-12-19 09:06:11,525 DEBUG [main] headers:265 - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-2018-12-19 09:06:11,525 DEBUG [main] headers:265 - << Server: cloudflare
-2018-12-19 09:06:11,525 DEBUG [main] headers:265 - << CF-RAY: 48b6d2d4cd29aa1a-SIN
-2018-12-19 09:06:11,525 DEBUG [main] headers:265 - << Content-Encoding: gzip
-2018-12-19 09:06:11,526 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
-2018-12-19 09:06:11,526 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
-2018-12-19 09:06:11,527 DEBUG [main] wire:73 -  << "89[\r][\n]"
-2018-12-19 09:06:11,527 DEBUG [main] wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]D[0xc8];[0xe][0xc2]0[0x10][0x5][0xc0][0xbb][0xbc][0xda][0xf2]*[0xd0] [0x97]4[0x1c][0x3]-[0xf1][0xc6]1[0xf2]'[0xb2]7[0x89]D[0x94][0xbb]SP[0xd0]L1[0x7]<+[0xc3][0x1d][0x88][0x1e]n0[0x98]b[0xeb][0xfa],[0x9c][0x5][0xe][0xf][0xa9]-[0x8][0xc][0x12][0xff][0xf3][0x9e]V[0x9d]a[0xc0][0x1b]+78[0xcc][0xaa]KwD[0xfd]j9[0xf3][0xa7][0x16][0xde][0xbb][0x1d]k[0xa6]5N<J[0xa7][0x9f][0xba]GUi4r[0x92]W[\r]^[\n]"
-2018-12-19 09:06:11,527 DEBUG [main] wire:87 -  << "[\r][0x97][0x9b]}/[0x1][0xe7][0xf9][0x5][0x0][0x0][0xff][0xff][0x3][0x0][0x9a]k[0xc9][0xc4][0x88][0x0][0x0][0x0]"
-2018-12-19 09:06:11,528 DEBUG [main] wire:73 -  << "[\r][\n]"
-2018-12-19 09:06:11,528 DEBUG [main] wire:73 -  << "0[\r][\n]"
-2018-12-19 09:06:11,528 DEBUG [main] wire:73 -  << "[\r][\n]"
-2018-12-19 09:06:11,529 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2018-12-19 09:06:11,533 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@408b35bf
-2018-12-19 09:06:11,535 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2018-12-19 09:06:11,555  INFO [main] FileComparatorTest:64 - Data George
-2018-12-19 09:06:11,589  INFO [main] FileComparatorTest:54 - read line 1 ======== https://reqres.in/api/users/2
-2018-12-19 09:06:11,589  INFO [main] FileComparatorTest:56 - read line 2 ======== https://reqres.in/api/users/2
-2018-12-19 09:06:11,590  INFO [main] ApiCalls:21 - ===================URL is https://reqres.in/api/users/2
-2018-12-19 09:06:11,600 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://reqres.in:443
-2018-12-19 09:06:11,600 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to reqres.in:443
-2018-12-19 09:06:11,839 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2018-12-19 09:06:11,840 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
-2018-12-19 09:06:11,841 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2018-12-19 09:06:11,842 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2018-12-19 09:06:11,842 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
-2018-12-19 09:06:11,842 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /api/users/2 HTTP/1.1
-2018-12-19 09:06:11,843 DEBUG [main] wire:73 -  >> "GET /api/users/2 HTTP/1.1[\r][\n]"
-2018-12-19 09:06:11,843 DEBUG [main] wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-2018-12-19 09:06:11,843 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
-2018-12-19 09:06:11,843 DEBUG [main] wire:73 -  >> "Host: reqres.in[\r][\n]"
-2018-12-19 09:06:11,844 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2018-12-19 09:06:11,844 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_152)[\r][\n]"
-2018-12-19 09:06:11,844 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2018-12-19 09:06:11,845 DEBUG [main] wire:73 -  >> "[\r][\n]"
-2018-12-19 09:06:11,845 DEBUG [main] headers:278 - >> GET /api/users/2 HTTP/1.1
-2018-12-19 09:06:11,845 DEBUG [main] headers:281 - >> Content-Type: application/json; charset=UTF-8
-2018-12-19 09:06:11,852 DEBUG [main] headers:281 - >> Accept: */*
-2018-12-19 09:06:11,852 DEBUG [main] headers:281 - >> Host: reqres.in
-2018-12-19 09:06:11,853 DEBUG [main] headers:281 - >> Connection: Keep-Alive
-2018-12-19 09:06:11,853 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_152)
-2018-12-19 09:06:11,853 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
-2018-12-19 09:06:12,392 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2018-12-19 09:06:12,393 DEBUG [main] wire:73 -  << "Date: Wed, 19 Dec 2018 03:36:13 GMT[\r][\n]"
-2018-12-19 09:06:12,393 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-2018-12-19 09:06:12,393 DEBUG [main] wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
-2018-12-19 09:06:12,394 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
-2018-12-19 09:06:12,394 DEBUG [main] wire:73 -  << "Set-Cookie: __cfduid=d468d9394e63ae312c959c4c36778c7221545190573; expires=Thu, 19-Dec-19 03:36:13 GMT; path=/; domain=.reqres.in; HttpOnly[\r][\n]"
-2018-12-19 09:06:12,394 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
-2018-12-19 09:06:12,395 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
-2018-12-19 09:06:12,395 DEBUG [main] wire:73 -  << "ETag: W/"89-bSBFK27ZbQL+K8fMuJn/jZrcUuk"[\r][\n]"
-2018-12-19 09:06:12,395 DEBUG [main] wire:73 -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
-2018-12-19 09:06:12,395 DEBUG [main] wire:73 -  << "Server: cloudflare[\r][\n]"
-2018-12-19 09:06:12,396 DEBUG [main] wire:73 -  << "CF-RAY: 48b6d2d99f43c3ab-SIN[\r][\n]"
-2018-12-19 09:06:12,396 DEBUG [main] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
-2018-12-19 09:06:12,396 DEBUG [main] wire:73 -  << "[\r][\n]"
-2018-12-19 09:06:12,396 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2018-12-19 09:06:12,397 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
-2018-12-19 09:06:12,397 DEBUG [main] headers:265 - << Date: Wed, 19 Dec 2018 03:36:13 GMT
-2018-12-19 09:06:12,397 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
-2018-12-19 09:06:12,397 DEBUG [main] headers:265 - << Transfer-Encoding: chunked
-2018-12-19 09:06:12,398 DEBUG [main] headers:265 - << Connection: keep-alive
-2018-12-19 09:06:12,398 DEBUG [main] headers:265 - << Set-Cookie: __cfduid=d468d9394e63ae312c959c4c36778c7221545190573; expires=Thu, 19-Dec-19 03:36:13 GMT; path=/; domain=.reqres.in; HttpOnly
-2018-12-19 09:06:12,398 DEBUG [main] headers:265 - << X-Powered-By: Express
-2018-12-19 09:06:12,398 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
-2018-12-19 09:06:12,398 DEBUG [main] headers:265 - << ETag: W/"89-bSBFK27ZbQL+K8fMuJn/jZrcUuk"
-2018-12-19 09:06:12,399 DEBUG [main] headers:265 - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-2018-12-19 09:06:12,399 DEBUG [main] headers:265 - << Server: cloudflare
-2018-12-19 09:06:12,399 DEBUG [main] headers:265 - << CF-RAY: 48b6d2d99f43c3ab-SIN
-2018-12-19 09:06:12,399 DEBUG [main] headers:265 - << Content-Encoding: gzip
-2018-12-19 09:06:12,400 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
-2018-12-19 09:06:12,400 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
-2018-12-19 09:06:12,400 DEBUG [main] wire:73 -  << "89[\r][\n]"
-2018-12-19 09:06:12,401 DEBUG [main] wire:87 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]D[0xc8];[0xe][0x82]@[0x14][0x5][0xd0][0xbd][0xdc]z[0xc2]Dl[0xcc],[0xc1][\r]X[0x9a][0x1b]x[0xc8][0x10][0xe7][0x93]yOH [0xec][0xdd][0xc2][0xc2][0xe6][0x14][0xe7][0xc0]H#[0xc2][0x81]8"[0xf4][0xe]Slj[0xcf][0xcc]$[0x8][0xb8]3[0x8b][0xc1][0xe1][0xcd][0xff]=[0x84][0xab]48p[0xa5][0xb1]!`6[0xab][0x1a][0xbc][0xd7]k[0xc7][0xc4][0xbd]dn[0xda][\r]%[0xf9]O[0x9c]8[0x88][0xfa][0x9f][0xb6]E3i~)*uV[0x93][0x98][0xfd][0xa5][0xbf]uK}[0xe1]<[0xbf][0x0][0x0][0x0][0xff][0xff][0x3][0x0][0x8e][0x1e]_L[0x89][0x0][0x0][0x0]"
-2018-12-19 09:06:12,401 DEBUG [main] wire:73 -  << "[\r][\n]"
-2018-12-19 09:06:12,401 DEBUG [main] wire:73 -  << "0[\r][\n]"
-2018-12-19 09:06:12,402 DEBUG [main] wire:73 -  << "[\r][\n]"
-2018-12-19 09:06:12,402 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2018-12-19 09:06:12,404 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@238b521e
-2018-12-19 09:06:12,404 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2018-12-19 09:06:12,410  INFO [main] FileComparatorTest:59 - Data Janet
-2018-12-19 09:06:12,411  INFO [main] ApiCalls:21 - ===================URL is https://reqres.in/api/users/2
-2018-12-19 09:06:12,422 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://reqres.in:443
-2018-12-19 09:06:12,422 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to reqres.in:443
-2018-12-19 09:06:12,667 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2018-12-19 09:06:12,668 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
-2018-12-19 09:06:12,668 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2018-12-19 09:06:12,669 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2018-12-19 09:06:12,669 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
-2018-12-19 09:06:12,669 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /api/users/2 HTTP/1.1
-2018-12-19 09:06:12,669 DEBUG [main] wire:73 -  >> "GET /api/users/2 HTTP/1.1[\r][\n]"
-2018-12-19 09:06:12,670 DEBUG [main] wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-2018-12-19 09:06:12,670 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
-2018-12-19 09:06:12,670 DEBUG [main] wire:73 -  >> "Host: reqres.in[\r][\n]"
-2018-12-19 09:06:12,671 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2018-12-19 09:06:12,671 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_152)[\r][\n]"
-2018-12-19 09:06:12,673 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2018-12-19 09:06:12,675 DEBUG [main] wire:73 -  >> "[\r][\n]"
-2018-12-19 09:06:12,676 DEBUG [main] headers:278 - >> GET /api/users/2 HTTP/1.1
-2018-12-19 09:06:12,677 DEBUG [main] headers:281 - >> Content-Type: application/json; charset=UTF-8
-2018-12-19 09:06:12,677 DEBUG [main] headers:281 - >> Accept: */*
-2018-12-19 09:06:12,677 DEBUG [main] headers:281 - >> Host: reqres.in
-2018-12-19 09:06:12,678 DEBUG [main] headers:281 - >> Connection: Keep-Alive
-2018-12-19 09:06:12,678 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_152)
-2018-12-19 09:06:12,678 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
-2018-12-19 09:06:13,139 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2018-12-19 09:06:13,139 DEBUG [main] wire:73 -  << "Date: Wed, 19 Dec 2018 03:36:14 GMT[\r][\n]"
-2018-12-19 09:06:13,140 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-2018-12-19 09:06:13,140 DEBUG [main] wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
-2018-12-19 09:06:13,140 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
-2018-12-19 09:06:13,141 DEBUG [main] wire:73 -  << "Set-Cookie: __cfduid=d632efcee2df53d0f5b9fb5b5d64b28081545190573; expires=Thu, 19-Dec-19 03:36:13 GMT; path=/; domain=.reqres.in; HttpOnly[\r][\n]"
-2018-12-19 09:06:13,141 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
-2018-12-19 09:06:13,142 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
-2018-12-19 09:06:13,142 DEBUG [main] wire:73 -  << "ETag: W/"89-bSBFK27ZbQL+K8fMuJn/jZrcUuk"[\r][\n]"
-2018-12-19 09:06:13,142 DEBUG [main] wire:73 -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
-2018-12-19 09:06:13,142 DEBUG [main] wire:73 -  << "Server: cloudflare[\r][\n]"
-2018-12-19 09:06:13,143 DEBUG [main] wire:73 -  << "CF-RAY: 48b6d2dece12c356-SIN[\r][\n]"
-2018-12-19 09:06:13,143 DEBUG [main] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
-2018-12-19 09:06:13,143 DEBUG [main] wire:73 -  << "[\r][\n]"
-2018-12-19 09:06:13,144 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2018-12-19 09:06:13,144 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
-2018-12-19 09:06:13,144 DEBUG [main] headers:265 - << Date: Wed, 19 Dec 2018 03:36:14 GMT
-2018-12-19 09:06:13,144 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
-2018-12-19 09:06:13,144 DEBUG [main] headers:265 - << Transfer-Encoding: chunked
-2018-12-19 09:06:13,145 DEBUG [main] headers:265 - << Connection: keep-alive
-2018-12-19 09:06:13,145 DEBUG [main] headers:265 - << Set-Cookie: __cfduid=d632efcee2df53d0f5b9fb5b5d64b28081545190573; expires=Thu, 19-Dec-19 03:36:13 GMT; path=/; domain=.reqres.in; HttpOnly
-2018-12-19 09:06:13,145 DEBUG [main] headers:265 - << X-Powered-By: Express
-2018-12-19 09:06:13,145 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
-2018-12-19 09:06:13,146 DEBUG [main] headers:265 - << ETag: W/"89-bSBFK27ZbQL+K8fMuJn/jZrcUuk"
-2018-12-19 09:06:13,146 DEBUG [main] headers:265 - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-2018-12-19 09:06:13,146 DEBUG [main] headers:265 - << Server: cloudflare
-2018-12-19 09:06:13,146 DEBUG [main] headers:265 - << CF-RAY: 48b6d2dece12c356-SIN
-2018-12-19 09:06:13,146 DEBUG [main] headers:265 - << Content-Encoding: gzip
-2018-12-19 09:06:13,147 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
-2018-12-19 09:06:13,147 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
-2018-12-19 09:06:13,147 DEBUG [main] wire:73 -  << "89[\r][\n]"
-2018-12-19 09:06:13,148 DEBUG [main] wire:87 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]D[0xc8];[0xe][0x82]@[0x14][0x5][0xd0][0xbd][0xdc]z[0xc2]Dl[0xcc],[0xc1][\r]X[0x9a][0x1b]x[0xc8][0x10][0xe7][0x93]yOH [0xec][0xdd][0xc2][0xc2][0xe6][0x14][0xe7][0xc0]H#[0xc2][0x81]8"[0xf4][0xe]Slj[0xcf][0xcc]$[0x8][0xb8]3[0x8b][0xc1][0xe1][0xcd][0xff]=[0x84][0xab]48p[0xa5][0xb1]!`6[0xab][0x1a][0xbc][0xd7]k[0xc7][0xc4][0xbd]dn[0xda][\r]%[0xf9]O[0x9c]8[0x88][0xfa][0x9f][0xb6]E3i~)*uV[0x93][0x98][0xfd][0xa5][0xbf]uK}[0xe1]<[0xbf][0x0][0x0][0x0][0xff][0xff][0x3][0x0][0x8e][0x1e]_L[0x89][0x0][0x0][0x0]"
-2018-12-19 09:06:13,148 DEBUG [main] wire:73 -  << "[\r][\n]"
-2018-12-19 09:06:13,148 DEBUG [main] wire:73 -  << "0[\r][\n]"
-2018-12-19 09:06:13,149 DEBUG [main] wire:73 -  << "[\r][\n]"
-2018-12-19 09:06:13,149 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2018-12-19 09:06:13,151 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@e041f0c
-2018-12-19 09:06:13,152 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2018-12-19 09:06:13,158  INFO [main] FileComparatorTest:64 - Data Janet
+2018-12-30 18:33:27,122  INFO [main] ApiCalls:41 - ====================URL is http://localhosthttps://reqres.in/api/users/2
+2018-12-30 18:33:27,127  INFO [main] ApiCalls:42 - ====================Request is {"name":"cSrSx","job":"zptNDrRwOs"}
+2018-12-30 18:33:28,063 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://reqres.in:443
+2018-12-30 18:33:28,074 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to reqres.in:443
+2018-12-30 18:33:28,403 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2018-12-30 18:33:28,405 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2018-12-30 18:33:28,405 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2018-12-30 18:33:28,406 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2018-12-30 18:33:28,406 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2018-12-30 18:33:28,406 DEBUG [main] DefaultClientConnection:274 - Sending request: PUT /api/users/2 HTTP/1.1
+2018-12-30 18:33:28,407 DEBUG [main] wire:73 -  >> "PUT /api/users/2 HTTP/1.1[\r][\n]"
+2018-12-30 18:33:28,408 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2018-12-30 18:33:28,408 DEBUG [main] wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2018-12-30 18:33:28,408 DEBUG [main] wire:73 -  >> "Content-Length: 35[\r][\n]"
+2018-12-30 18:33:28,408 DEBUG [main] wire:73 -  >> "Host: reqres.in[\r][\n]"
+2018-12-30 18:33:28,409 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2018-12-30 18:33:28,410 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_152)[\r][\n]"
+2018-12-30 18:33:28,410 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-12-30 18:33:28,410 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2018-12-30 18:33:28,411 DEBUG [main] headers:278 - >> PUT /api/users/2 HTTP/1.1
+2018-12-30 18:33:28,411 DEBUG [main] headers:281 - >> Accept: */*
+2018-12-30 18:33:28,411 DEBUG [main] headers:281 - >> Content-Type: application/json; charset=UTF-8
+2018-12-30 18:33:28,411 DEBUG [main] headers:281 - >> Content-Length: 35
+2018-12-30 18:33:28,412 DEBUG [main] headers:281 - >> Host: reqres.in
+2018-12-30 18:33:28,412 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2018-12-30 18:33:28,412 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_152)
+2018-12-30 18:33:28,412 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2018-12-30 18:33:28,413 DEBUG [main] wire:87 -  >> "{"name":"cSrSx","job":"zptNDrRwOs"}"
+2018-12-30 18:33:28,876 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2018-12-30 18:33:28,878 DEBUG [main] wire:73 -  << "Date: Sun, 30 Dec 2018 13:03:28 GMT[\r][\n]"
+2018-12-30 18:33:28,878 DEBUG [main] wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2018-12-30 18:33:28,879 DEBUG [main] wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2018-12-30 18:33:28,879 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2018-12-30 18:33:28,879 DEBUG [main] wire:73 -  << "Set-Cookie: __cfduid=df6e0877185c193cc5741723a9bd42ae91546175008; expires=Mon, 30-Dec-19 13:03:28 GMT; path=/; domain=.reqres.in; HttpOnly[\r][\n]"
+2018-12-30 18:33:28,880 DEBUG [main] wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2018-12-30 18:33:28,880 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2018-12-30 18:33:28,880 DEBUG [main] wire:73 -  << "ETag: W/"4a-9IXzoO14YJFaBMeLBz68W6/vxhc"[\r][\n]"
+2018-12-30 18:33:28,881 DEBUG [main] wire:73 -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2018-12-30 18:33:28,881 DEBUG [main] wire:73 -  << "Server: cloudflare[\r][\n]"
+2018-12-30 18:33:28,881 DEBUG [main] wire:73 -  << "CF-RAY: 4914b4eaae25c3ab-SIN[\r][\n]"
+2018-12-30 18:33:28,882 DEBUG [main] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2018-12-30 18:33:28,882 DEBUG [main] wire:73 -  << "[\r][\n]"
+2018-12-30 18:33:28,883 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2018-12-30 18:33:28,883 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2018-12-30 18:33:28,884 DEBUG [main] headers:265 - << Date: Sun, 30 Dec 2018 13:03:28 GMT
+2018-12-30 18:33:28,884 DEBUG [main] headers:265 - << Content-Type: application/json; charset=utf-8
+2018-12-30 18:33:28,884 DEBUG [main] headers:265 - << Transfer-Encoding: chunked
+2018-12-30 18:33:28,884 DEBUG [main] headers:265 - << Connection: keep-alive
+2018-12-30 18:33:28,885 DEBUG [main] headers:265 - << Set-Cookie: __cfduid=df6e0877185c193cc5741723a9bd42ae91546175008; expires=Mon, 30-Dec-19 13:03:28 GMT; path=/; domain=.reqres.in; HttpOnly
+2018-12-30 18:33:28,885 DEBUG [main] headers:265 - << X-Powered-By: Express
+2018-12-30 18:33:28,885 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2018-12-30 18:33:28,886 DEBUG [main] headers:265 - << ETag: W/"4a-9IXzoO14YJFaBMeLBz68W6/vxhc"
+2018-12-30 18:33:28,886 DEBUG [main] headers:265 - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2018-12-30 18:33:28,886 DEBUG [main] headers:265 - << Server: cloudflare
+2018-12-30 18:33:28,886 DEBUG [main] headers:265 - << CF-RAY: 4914b4eaae25c3ab-SIN
+2018-12-30 18:33:28,887 DEBUG [main] headers:265 - << Content-Encoding: gzip
+2018-12-30 18:33:28,892 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2018-12-30 18:33:28,906 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2018-12-30 18:33:28,907 DEBUG [main] wire:73 -  << "64[\r][\n]"
+2018-12-30 18:33:28,908 DEBUG [main] wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xaa]V[0xca]K[0xcc]MU[0xb2]RJ[0xe].[\n]"
+2018-12-30 18:33:28,908 DEBUG [main] wire:73 -  << "[0xae]P[0xd2]Q[0xca][0xca]OR[0xb2]R[0xaa]*([0xf1]s)[\n]"
+2018-12-30 18:33:28,908 DEBUG [main] wire:87 -  << "*[0xf7]/V[0xd2]Q*-HI,IMq,Q[0xb2]R220[0xb4][0xd0]54[0xd2]56[0x8]14[0xb6]20[0xb7]20[0xd4]320[0x88]R[0xaa][0x5][0x0][0x0][0x0][0xff][0xff][0x3][0x0]'[0xfd].[0xb5]J[0x0][0x0][0x0]"
+2018-12-30 18:33:28,909 DEBUG [main] wire:73 -  << "[\r][\n]"
+2018-12-30 18:33:28,909 DEBUG [main] wire:73 -  << "0[\r][\n]"
+2018-12-30 18:33:28,910 DEBUG [main] wire:73 -  << "[\r][\n]"
+2018-12-30 18:33:28,911 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2018-12-30 18:33:29,035 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1d8062d2
+2018-12-30 18:33:29,037 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2018-12-30 18:33:29,078  INFO [main] PutorPostRequest:26 - name from request cSrSx
+2018-12-30 18:33:29,424  INFO [main] PutorPostRequest:27 - name from response cSrSx
