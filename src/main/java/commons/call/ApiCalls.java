@@ -2,6 +2,7 @@ package commons.call;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import org.apache.log4j.Logger;
 import org.json.simple.JSONObject;
