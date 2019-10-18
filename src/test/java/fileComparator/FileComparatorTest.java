@@ -83,7 +83,7 @@ public class FileComparatorTest {
     // Hit the apis by iterating through the arrays and store the compared response in a map
     // Iterate through the Map and print the result
 
-    @Test(enabled = false)
+    @Test()
     public void compareApiMethod2Test() throws IOException {
 
         ArrayList<String> lines1 = new ArrayList<>(Files.readAllLines
